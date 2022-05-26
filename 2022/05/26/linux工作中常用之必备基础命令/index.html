@@ -43,7 +43,7 @@
 
 <script src="/js/iconfont.js?v=1.1.0" ></script>
 
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 <div style="display: none">
   <input class="theme_disqus_on" value="false">
   <input class="theme_preload_comment" value="">
@@ -338,7 +338,9 @@
 </li>
 <li><p>who当前在本地系统上的所有用户信息<br>举例:whoami；who</p>
 </li>
-<li><p>uptime命令:查询系统信息<br>举例:load average: 0.00，0.01，0.05 一分钟负载，五分钟负载，十五分钟负载<br>4.w命令:查询系统信息</p>
+<li><p>uptime命令:查询系统信息<br>举例:load average: 0.00，0.01，0.05 一分钟负载，五分钟负载，十五分钟负载</p>
+</li>
+<li><p>w命令:查询系统信息</p>
 </li>
 <li><p>free命令:查看系统内存<br>举例:free -h；free -m</p>
 </li>
@@ -352,13 +354,15 @@
 <p>-v:反向选择</p>
 </blockquote>
 </li>
-<li><p>find命令:查询文件<br>举例:find&#x2F;-name -type f 123.txt</p>
+<li><p>find命令:查询文件<br>举例:find/-name -type f 123.txt</p>
 </li>
 <li><p>uniq命令:对排序好的内容进行统计<br>举例:uniq -c 123..txt | sort -n</p>
 </li>
 <li><p>sort命令:对内容进行排序<br>举例:uniq -c 123.txt | sort -n</p>
 </li>
-<li></li>
+</ol>
+<p>11.</p>
+<ol start="12">
 <li><p>netstat命令:查看网络端口的使用情况<br>举例:netstat -tunlp | grep</p>
 </li>
 <li><p>hostname命令:查看主机名</p>
@@ -374,7 +378,7 @@
 </ol>
 <p>举例:q键退出</p>
 <h2 id="基础命令3-1"><a href="#基础命令3-1" class="headerlink" title="基础命令3.1"></a>基础命令3.1</h2><ol>
-<li>cd命令:切换目录<br>举例:<br>cd&#x2F;usr&#x2F;local&#x2F;	;进入指定目录<br>cd..	;返回到上一层<br>cd -	;返回进入此目录之前的目录</li>
+<li>cd命令:切换目录<br>举例:<br>cd/usr/local/    ;进入指定目录<br>cd..    ;返回到上一层<br>cd -    ;返回进入此目录之前的目录</li>
 </ol>
 <p>2.ls命令:列出目录内容<br>举例:以列表形式展示目录ls -l；<br>以时间形式展示目录(倒序）ls -lt；<br>(正序)ls -ltr；ls[参数] [路径]；<br>显示隐藏路径ls -a；<br>显示隐藏文件的展示目录</p>
 <p>三，pwd命令:查询所在目录</p>
@@ -390,13 +394,13 @@
 <p>八，touch命令:创建一个空文件</p>
 <p>举例:touch 123.txt</p>
 <p>九，mkdir命令:创建目录</p>
-<p>举例:mkdir -p&#x2F;tmp&#x2F;ad&#x2F;ad&#x2F;class</p>
+<p>举例:mkdir -p/tmp/ad/ad/class</p>
 <p>十，rmdir命令:删除目录</p>
-<p>举例:rmdir&#x2F;tmp&#x2F;xd&#x2F;xd&#x2F;class</p>
+<p>举例:rmdir/tmp/xd/xd/class</p>
 <p>十一，cp命令:拷贝文件</p>
-<p>举例:cp 123.txt class&#x2F;;cp -a 123.txt class&#x2F;456.txt(连同属性一起复制，可以更改名字)</p>
+<p>举例:cp 123.txt class/;cp -a 123.txt class/456.txt(连同属性一起复制，可以更改名字)</p>
 <p>十二，mv命令:移动或更名现有的文件或目录</p>
-<p>举例:mv 123.txt 234.php(改名）;mv 789.txt&#x2F;home&#x2F;987.php（改名加挪到home路径下）</p>
+<p>举例:mv 123.txt 234.php(改名）;mv 789.txt/home/987.php（改名加挪到home路径下）</p>
 <p>十三，rm命令:删除文件或目录</p>
 <p>举例:rm 987.php(会提示是否删除）；rm -rf 456.txt(直接删除)</p>
 <p>十四，diff命令:对比文件差异</p>
@@ -425,14 +429,14 @@
 <p>举例:cat &gt;&gt; 123.txt ;cat &gt;123.txt ;ls -lrt &gt; 123.txt ;echo ‘12345’ &gt; 123.txt</p>
 </blockquote>
 <h3 id="错误重定向"><a href="#错误重定向" class="headerlink" title="错误重定向"></a>错误重定向</h3><blockquote>
-<p>举例:cat &gt;&gt; 123.txt ; ||| 2&gt; &#x2F;dev&#x2F;null #&#x2F;dev&#x2F;null 无底洞</p>
+<p>举例:cat &gt;&gt; 123.txt ; ||| 2&gt; /dev/null #/dev/null 无底洞</p>
 </blockquote>
 <p>通俗的讲，错误重定向就是把错误的信息写入到一个文件中</p>
 <h3 id="文件描述符"><a href="#文件描述符" class="headerlink" title="文件描述符"></a>文件描述符</h3><p>0 标准输入<br>1 标准输出<br>2 标准错误输出</p>
 <p>几个符号:<br>&amp; #代表等同于的意思<br>&amp;&gt; #代表不分正确错误的意思<br>| #管道符<br>；#代表的是可以执行多条命令<br>&amp;&amp; #前面的命令执行成功的话，后面的才可以执行<br>前面的命令执行失败的话后面的不可以执行</p>
 <p>|| #前面的命令执行成功的话，后面的不执行</p>
 <p>前面的命令执行失败的话，后面的可以执行</p>
-<h2 id="Linux下的目录分类与作用介绍"><a href="#Linux下的目录分类与作用介绍" class="headerlink" title="Linux下的目录分类与作用介绍"></a>Linux下的目录分类与作用介绍</h2><p>&#x2F;  :根目录,一般根目录下只存放目录,不要存放文件,也不要修改,或者是删除目录下的内容<br>&#x2F;mnt  :测试目录<br>&#x2F;root  :root用户的家目录 cd&#x2F;root&#x2F;;cd<br>&#x2F;home  :普通用户的家目录<br>&#x2F;temp  :临时目录(比如文件上传时)<br>&#x2F;var  :存放经常修改的数据,比如程序运行的日志文件<br>&#x2F;boot  :存放启动Linux时使用的内核文件,包括连接文件以及镜像文件  不准删除,不能删除<br>&#x2F;etc  :系统默认放置配置文件的地方<br>&#x2F;bin  :所有用户都能执行的程序<br>&#x2F;sbin  :只有root才能执行的程序<br>&#x2F;usr  :用户自己的软件都可以放到这里来<br>&#x2F;dev  :存放硬件设备的地方(&#x2F;dev&#x2F;cdrom)<br>&#x2F;media  :挂载光盘使用的</p>
+<h2 id="Linux下的目录分类与作用介绍"><a href="#Linux下的目录分类与作用介绍" class="headerlink" title="Linux下的目录分类与作用介绍"></a>Linux下的目录分类与作用介绍</h2><p>/  :根目录,一般根目录下只存放目录,不要存放文件,也不要修改,或者是删除目录下的内容<br>/mnt  :测试目录<br>/root  :root用户的家目录 cd/root/;cd<br>/home  :普通用户的家目录<br>/temp  :临时目录(比如文件上传时)<br>/var  :存放经常修改的数据,比如程序运行的日志文件<br>/boot  :存放启动Linux时使用的内核文件,包括连接文件以及镜像文件  不准删除,不能删除<br>/etc  :系统默认放置配置文件的地方<br>/bin  :所有用户都能执行的程序<br>/sbin  :只有root才能执行的程序<br>/usr  :用户自己的软件都可以放到这里来<br>/dev  :存放硬件设备的地方(/dev/cdrom)<br>/media  :挂载光盘使用的</p>
 <h2 id="3-6-linux高手编辑神器vi的使用"><a href="#3-6-linux高手编辑神器vi的使用" class="headerlink" title="3.6 linux高手编辑神器vi的使用"></a>3.6 linux高手编辑神器vi的使用</h2><ul>
 <li><p>vi的基本概念:(三种模式)<br> 命令模式<br> 插入模式<br> 底行模式</p>
 <blockquote>
@@ -446,28 +450,28 @@
 </li>
 <li><p>在底行模式中的操作:</p>
 <blockquote>
-<p>n			#n为数字,光标移动到第n行<br>&#x2F;			#寻找内容 </p>
+<p>n            #n为数字,光标移动到第n行<br>/            #寻找内容 </p>
 <blockquote>
-<p>示例:%s&#x2F;word1&#x2F;word2&#x2F;g		#从第一行到最后一行寻找 word1 字符串,并将该字符串取代为 word2<br>n1,n2s&#x2F;word1&#x2F;word2&#x2F;g		#n1 与 n2 为数字,在第 n1 行与 n2 行之间寻找 word1 这个字符串,并将该字符串取代为 word2</p>
+<p>示例:%s/word1/word2/g        #从第一行到最后一行寻找 word1 字符串,并将该字符串取代为 word2<br>n1,n2s/word1/word2/g        #n1 与 n2 为数字,在第 n1 行与 n2 行之间寻找 word1 这个字符串,并将该字符串取代为 word2</p>
 </blockquote>
 </blockquote>
 </li>
 </ul>
 <blockquote>
-<p>set nu			#显示行号<br>set nonu		#取消行号<br>q!				#强制离开不保存<br>wq				#离开并保存<br>wq!				#强制离开并保存<br>!ls				#暂时离开</p>
+<p>set nu            #显示行号<br>set nonu        #取消行号<br>q!                #强制离开不保存<br>wq                #离开并保存<br>wq!                #强制离开并保存<br>!ls                #暂时离开</p>
 </blockquote>
 <h2 id="3-7-linux的用户管理与组管理"><a href="#3-7-linux的用户管理与组管理" class="headerlink" title="3.7 linux的用户管理与组管理"></a>3.7 linux的用户管理与组管理</h2><p>简介:讲解linux用户管理与组管理</p>
 <ul>
 <li>linux是一个多用户,多任务的操作系统</li>
 <li>linux用户的分类:<ul>
 <li>超级用户root:拥有最高的权限  UID:0</li>
-<li>普通用户:权限有一定限制,可以登录系统.一般可以执行&#x2F;usr&#x2F;local&#x2F;bin或者&#x2F;bin或者&#x2F;usr&#x2F;bin或者自己家目录的命令 UID:500-60000(centos 6) UID:1000-60000(centos 7)</li>
+<li>普通用户:权限有一定限制,可以登录系统.一般可以执行/usr/local/bin或者/bin或者/usr/bin或者自己家目录的命令 UID:500-60000(centos 6) UID:1000-60000(centos 7)</li>
 <li>系统用户(伪用户):一般不会登录系统,一般情况是用来维持某个服务程序 UID:1-499(centos 6) UID:1-1000(centos 7)</li>
 </ul>
 </li>
 <li>关于用户的相关配置文件<ul>
-<li>账号信息:&#x2F;etc&#x2F;passwd</li>
-<li>密码信息:&#x2F;etc&#x2F;shadow</li>
+<li>账号信息:/etc/passwd</li>
+<li>密码信息:/etc/shadow</li>
 </ul>
 </li>
 </ul>
@@ -478,9 +482,9 @@
 <th>:x</th>
 <th>:1000</th>
 <th>:1000:</th>
-<th>:&#x2F;home</th>
-<th>&#x2F;test</th>
-<th>:&#x2F;bin&#x2F;bash</th>
+<th>:/home</th>
+<th>/test</th>
+<th>:/bin/bash</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -493,19 +497,19 @@
 <td>登陆后使用的shell解释</td>
 </tr>
 </tbody></table>
-<p>&#x2F;sbin&#x2F;nologin	#是不可登录的</p>
+<p>/sbin/nologin    #是不可登录的</p>
 <ul>
 <li>添加用户命令:<strong>useradd</strong><ul>
-<li><strong>-u</strong>	#制定用户UID</li>
-<li><strong>-d</strong>	#指定用户主目录</li>
-<li><strong>-g</strong>	#指定用户所属组</li>
-<li><strong>-r</strong>	#指定用户是系统用户</li>
-<li><strong>-s</strong>	#用户是shell解释器</li>
-<li><strong>-M</strong>	#不创建主目录</li>
+<li><strong>-u</strong>    #制定用户UID</li>
+<li><strong>-d</strong>    #指定用户主目录</li>
+<li><strong>-g</strong>    #指定用户所属组</li>
+<li><strong>-r</strong>    #指定用户是系统用户</li>
+<li><strong>-s</strong>    #用户是shell解释器</li>
+<li><strong>-M</strong>    #不创建主目录</li>
 </ul>
 </li>
-<li>eg:创建一个用户HR,指定UID为1010,指定家目录为&#x2F;home&#x2F;HR,指定所属组为root组,指定登录shell为&#x2F;bin&#x2F;bash<ul>
-<li><strong>useradd -u 1010 -d &#x2F;home&#x2F;HR -g root -s &#x2F;bin&#x2F;bash HR</strong></li>
+<li>eg:创建一个用户HR,指定UID为1010,指定家目录为/home/HR,指定所属组为root组,指定登录shell为/bin/bash<ul>
+<li><strong>useradd -u 1010 -d /home/HR -g root -s /bin/bash HR</strong></li>
 </ul>
 </li>
 <li>登录用户时…..</li>
@@ -516,9 +520,9 @@
 <li>添加用户组命令:<strong>groupadd</strong></li>
 <li>删除用户组命令:<strong>groupdel</strong></li>
 <li>修改用户组的命令信息:<strong>usermod</strong><ul>
-<li><strong>-u</strong>	#指定用户UID</li>
-<li><strong>-d</strong>	#指定用户主目录</li>
-<li><strong>-g</strong>	#指定用户所需组</li>
+<li><strong>-u</strong>    #指定用户UID</li>
+<li><strong>-d</strong>    #指定用户主目录</li>
+<li><strong>-g</strong>    #指定用户所需组</li>
 </ul>
 </li>
 <li>设置用户密码命令:<strong>passwd</strong><ul>
